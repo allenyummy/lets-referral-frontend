@@ -6,7 +6,7 @@ import ReferralPage from "./pages/ReferralPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/tsmc-referral-frontend">
       <Routes>
         {["/"].map((path, index) => (
           <Route key={index} path={path} element={<ReferralPage />} />
