@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tsmc-referral-frontend/static/css/main.4e04819f.css",
-    "main.js": "/tsmc-referral-frontend/static/js/main.a2e077f3.js",
+    "main.js": "/tsmc-referral-frontend/static/js/main.76594cc9.js",
     "static/js/453.e7ef94ad.chunk.js": "/tsmc-referral-frontend/static/js/453.e7ef94ad.chunk.js",
     "static/media/release.png": "/tsmc-referral-frontend/static/media/release.795041db1834d22a39a9.png",
     "index.html": "/tsmc-referral-frontend/index.html",
     "main.4e04819f.css.map": "/tsmc-referral-frontend/static/css/main.4e04819f.css.map",
-    "main.a2e077f3.js.map": "/tsmc-referral-frontend/static/js/main.a2e077f3.js.map",
+    "main.76594cc9.js.map": "/tsmc-referral-frontend/static/js/main.76594cc9.js.map",
     "453.e7ef94ad.chunk.js.map": "/tsmc-referral-frontend/static/js/453.e7ef94ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e04819f.css",
-    "static/js/main.a2e077f3.js"
+    "static/js/main.76594cc9.js"
   ]
 }
