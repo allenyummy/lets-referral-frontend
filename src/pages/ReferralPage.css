@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/TSMC.png");
+  background-image: url("../assets/release.png");
   background-repeat: repeat;
-  background-size: 80px;
+  background-size: 50px;
   background-position: center;
   min-height: 100vh;
 }
