@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a76653a.css",
+    "main.js": "/static/js/main.6a5c652a.js",
+    "static/js/453.75b16864.chunk.js": "/static/js/453.75b16864.chunk.js",
+    "static/media/TSMC.png": "/static/media/TSMC.e69154146e71841ca723.png",
+    "index.html": "/index.html",
+    "main.5a76653a.css.map": "/static/css/main.5a76653a.css.map",
+    "main.6a5c652a.js.map": "/static/js/main.6a5c652a.js.map",
+    "453.75b16864.chunk.js.map": "/static/js/453.75b16864.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a76653a.css",
+    "static/js/main.6a5c652a.js"
+  ]
+}
