@@ -76,7 +76,7 @@ const ReferralForm = () => {
     <div className="tsmc-form-container">
       {isSubmitting && <LoadingSpinner />}
       <form ref={formRef} action="" onSubmit={handleSubmit}>
-        <h1> Referral </h1>
+        <h1> TSMC Referral </h1>
         <NameInput name="user_name" value={name} onChange={setName} />
         <EmailInput name="user_email" value={email} onChange={setEmail} />
         <LocationInput
