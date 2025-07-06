@@ -4,6 +4,8 @@ import "./ReferralForm.css";
 import NameInput from "./NameInput";
 import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import ResumeUpload from "./ResumeUpload";
 import LoadingSpinner from "./LoadingSpinner";
 import SuccessModal from "./SuccessModal";
@@ -14,7 +16,11 @@ const ReferralForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [curLocation, setLocation] = useState("Location");
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [resume, setResume] = useState<File | null>(null);
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [fileError, setFileError] = useState<string>("");
   const [isSubmitting, setSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -73,7 +79,7 @@ const ReferralForm = () => {
         <h1> Referral </h1>
         <NameInput name="user_name" value={name} onChange={setName} />
         <EmailInput name="user_email" value={email} onChange={setEmail} />
-      <LocationInput
+        <LocationInput
           name="user_location"
           value={curLocation}
           onChange={setLocation}
