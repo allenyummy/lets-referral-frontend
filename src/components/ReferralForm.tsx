@@ -1,15 +1,15 @@
 import { useRef, useState } from "react";
 
+import emailjs from "@emailjs/browser";
+
 import "./ReferralForm.css";
 import NameInput from "./NameInput";
 import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import ResumeUpload from "./ResumeUpload";
 import LoadingSpinner from "./LoadingSpinner";
 import SuccessModal from "./SuccessModal";
-import emailjs from "@emailjs/browser";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import ResumeUpload from "./ResumeUpload";
 
 const ReferralForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -66,7 +66,7 @@ const ReferralForm = () => {
       setFileError("");
     } catch (err) {
       console.error("EmailJS error", err);
-      alert("寄送失敗，請稍後再試或聯絡管理員。");
+      alert("The maximum number of referrals for today has been reached. Please try again tmr. 🙂");
     } finally {
       setSubmitting(false);
     }
