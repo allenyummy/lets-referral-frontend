@@ -2,6 +2,7 @@
   "name": "tsmc-referral-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://allenyummy.github.io/tsmc-referral-frontend",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
