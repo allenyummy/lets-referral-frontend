@@ -10,6 +10,7 @@ import LocationInput from "./LocationInput";
 import LoadingSpinner from "./LoadingSpinner";
 import SuccessModal from "./SuccessModal";
 import ResumeUpload from "./ResumeUpload";
+import Footer from "./Footer";
 
 const ReferralForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -102,6 +103,7 @@ const ReferralForm = () => {
         />
         <button type="submit">Lucky Submit</button>
         <SuccessModal show={showSuccess} onHide={() => setShowSuccess(false)} />
+        <Footer />
       </form>
     </div>
   );

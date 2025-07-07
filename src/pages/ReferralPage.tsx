@@ -1,12 +1,8 @@
-import { useNavigate } from "react-router-dom";
-
-import ReferralForm from "../components/ReferralForm";
 import "./ReferralPage.css";
 
-const RerferralPage = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const navigate = useNavigate();
+import ReferralForm from "../components/ReferralForm";
 
+const RerferralPage = () => {
   return (
     <div className="tsmc-page-container">
       <ReferralForm />

@@ -1,10 +1,6 @@
 .tsmc-form-container {
-  /* backdrop-filter: blur(1rem); */
-  /* box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); */
-  /* border: 0.125rem solid rgba(255, 255, 255, 0.2); */
   border: 0.125rem solid black;
   border-radius: 0.625rem;
-  /* background: transparent; */
   background: white;
   padding: 1.875rem 2.5rem;
   width: 26.25rem;
@@ -25,10 +21,8 @@
 
 .tsmc-form-container .box input {
   outline: none;
-  /* border: 0.125rem solid rgba(255, 255, 255, 0.2); */
   border: 0.125rem solid black;
   border-radius: 2.5rem;
-  /* background: transparent; */
   padding: 1.25rem 2.8125rem 1.25rem 1.25rem;
   width: 100%;
   height: 100%;
@@ -55,11 +49,9 @@
   cursor: pointer;
   outline: none;
   box-shadow: 0 0px 0.625rem rgba(0, 0, 0, 0.1);
-  /* border: none; */
   border: 0.125rem solid black;
   border-radius: 2.5rem;
   background: #fff;
-  /* background: black; */
   width: 100%;
   height: 2.8125rem;
   color: black;
@@ -73,9 +65,7 @@
   height: 3.125rem;
   border-radius: 2.5rem;
   background-color: transparent;
-  /* border: 0.125rem solid rgba(255, 255, 255, 0.2); */
   border: 0.125rem solid black;
-  /* color: #fff; */
   color: black;
   font-size: 1rem;
   font-weight: 400;
@@ -92,7 +82,6 @@
 .tsmc-form-container .box .dropdown-menu {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  /* border: 0.125rem solid rgba(255, 255, 255, 0.2); */
   border: 0.125rem solid black;
   border-radius: 0.5rem;
   z-index: 1050;
