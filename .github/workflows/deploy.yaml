@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: Inject EmailJS secrets into .env.production
+      - name: Inject secrets into .env.production
         run: |
           echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env.production
           echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env.production
