@@ -25,8 +25,8 @@ jobs:
           echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env.production
           echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env.production
           echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env.production
-          echo "REACT_APP_SUPABASE_URL=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env.production
-          echo "REACT_APP_SUPABASE_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env.production
+          echo "REACT_APP_SUPABASE_URL=${{ secrets.REACT_APP_SUPABASE_URL }}" >> .env.production
+          echo "REACT_APP_SUPABASE_KEY=${{ secrets.REACT_APP_SUPABASE_KEY }}" >> .env.production
           cat .env.production
 
       - name: Install & Build

@@ -35,22 +35,22 @@ const ReferralForm = () => {
     const uuid = `${crypto.randomUUID()}`;
     setSubmitting(true);
 
-    // Step 1: upload to supabase
-    const fileName = `${uuid}-${resume.name}`;
-    const { error } = await supabase.storage
-      .from("resumes")
-      .upload(fileName, resume);
-
-    if (error) {
-      setResume(null);
-      alert(
-        "An error occurred while uploading your resume. \nPlease contact support to Author."
-      );
-      return;
-    }
-
-    // Step 2: send email using EmailJS
     try {
+      // Step 1: upload to supabase
+      const fileName = `${uuid}-${resume.name}`;
+      const { error } = await supabase.storage
+        .from("resumes")
+        .upload(fileName, resume);
+
+      if (error) {
+        setResume(null);
+        alert(
+          "An error occurred while uploading your resume. \nPlease contact support to Author."
+        );
+        return;
+      }
+
+      // Step 2: send email using EmailJS
       const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
       const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
       const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "";
