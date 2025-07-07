@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
+import { supabase } from "../lib/supabase";
 
 import "./ReferralForm.css";
 import NameInput from "./NameInput";
@@ -8,57 +9,63 @@ import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";
 import LoadingSpinner from "./LoadingSpinner";
 import SuccessModal from "./SuccessModal";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import ResumeUpload from "./ResumeUpload";
 
 const ReferralForm = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [curLocation, setLocation] = useState("Location");
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [location, setLocation] = useState("Location");
   const [resume, setResume] = useState<File | null>(null);
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [fileError, setFileError] = useState<string>("");
   const [isSubmitting, setSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // 嚴謹檢查
-    // if (!resume) {
-    //   setFileError("Please upload PDF");
-    //   return;
-    // }
+
+    if (!resume) {
+      setFileError("Please upload PDF");
+      return;
+    }
+
     if (!formRef.current) return;
 
+    const uuid = `${crypto.randomUUID()}`;
     setSubmitting(true);
 
-    try {
-      // EmailJS – 利用 FormData 傳送
-      const formData = new FormData();
-      formData.append("user_name", name);
-      formData.append("user_email", email);
-      formData.append("user_location", curLocation);
-      // formData.append("user_resume", resume, resume.name);
+    // Step 1: upload to supabase
+    const fileName = `${uuid}-${resume.name}`;
+    const { error } = await supabase.storage
+      .from("resumes")
+      .upload(fileName, resume);
 
+    if (error) {
+      setResume(null);
+      alert(
+        "An error occurred while uploading your resume. \nPlease contact support to Author."
+      );
+      return;
+    }
+
+    // Step 2: send email using EmailJS
+    try {
       const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
       const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
       const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "";
-
-      await emailjs.sendForm(
+      await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID,
-        formRef.current,
+        {
+          user_name: name,
+          user_email: email,
+          user_location: location,
+          user_request_uuid: uuid,
+        },
         PUBLIC_KEY
       );
 
-      // 成功
       setShowSuccess(true);
-
-      // 清空所有欄位
       setName("");
       setEmail("");
       setLocation("Location");
@@ -83,17 +90,16 @@ const ReferralForm = () => {
         <EmailInput name="user_email" value={email} onChange={setEmail} />
         <LocationInput
           name="user_location"
-          value={curLocation}
+          value={location}
           onChange={setLocation}
         />
-        {/* <ResumeUpload
+        <ResumeUpload
           name="user_resume"
           file={resume}
           error={fileError}
           onFileChange={setResume}
           onError={setFileError}
-        /> */}
-
+        />
         <button type="submit">Lucky Submit</button>
         <SuccessModal show={showSuccess} onHide={() => setShowSuccess(false)} />
       </form>
