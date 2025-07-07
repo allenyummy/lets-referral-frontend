@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="copyright">
         <MdOutlineCopyright size={15} />
-        2025<b>Allenyummy</b>
+        2025<b> Allenyummy </b>
       </div>
       <div className="label">All Rights Reserved.</div>
     </div>
