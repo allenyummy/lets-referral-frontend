@@ -44,9 +44,9 @@ const ReferralForm = () => {
       formData.append("user_location", curLocation);
       // formData.append("user_resume", resume, resume.name);
 
-      const SERVICE_ID = "service_q4ipnve";
-      const TEMPLATE_ID = "template_ui0evzy";
-      const PUBLIC_KEY = "qsCAPdjyQ5huPTg-7";
+      const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID || "";
+      const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "";
+      const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "";
 
       await emailjs.sendForm(
         SERVICE_ID,
@@ -66,7 +66,9 @@ const ReferralForm = () => {
       setFileError("");
     } catch (err) {
       console.error("EmailJS error", err);
-      alert("The maximum number of referrals for today has been reached. Please try again tmr. 🙂");
+      alert(
+        "The maximum number of referrals for today has been reached. Please try again tmr. 🙂"
+      );
     } finally {
       setSubmitting(false);
     }
