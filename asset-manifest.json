@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tsmc-referral-frontend/static/css/main.331e6bb8.css",
-    "main.js": "/tsmc-referral-frontend/static/js/main.17bd85bf.js",
-    "static/js/453.e7ef94ad.chunk.js": "/tsmc-referral-frontend/static/js/453.e7ef94ad.chunk.js",
-    "static/media/release.png": "/tsmc-referral-frontend/static/media/release.795041db1834d22a39a9.png",
-    "index.html": "/tsmc-referral-frontend/index.html",
-    "main.331e6bb8.css.map": "/tsmc-referral-frontend/static/css/main.331e6bb8.css.map",
-    "main.17bd85bf.js.map": "/tsmc-referral-frontend/static/js/main.17bd85bf.js.map",
-    "453.e7ef94ad.chunk.js.map": "/tsmc-referral-frontend/static/js/453.e7ef94ad.chunk.js.map"
+    "main.css": "/lets-referral-frontend/static/css/main.ecbdc47e.css",
+    "main.js": "/lets-referral-frontend/static/js/main.5ab30f7d.js",
+    "static/js/453.75b16864.chunk.js": "/lets-referral-frontend/static/js/453.75b16864.chunk.js",
+    "static/media/release.png": "/lets-referral-frontend/static/media/release.795041db1834d22a39a9.png",
+    "index.html": "/lets-referral-frontend/index.html",
+    "main.ecbdc47e.css.map": "/lets-referral-frontend/static/css/main.ecbdc47e.css.map",
+    "main.5ab30f7d.js.map": "/lets-referral-frontend/static/js/main.5ab30f7d.js.map",
+    "453.75b16864.chunk.js.map": "/lets-referral-frontend/static/js/453.75b16864.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.331e6bb8.css",
-    "static/js/main.17bd85bf.js"
+    "static/css/main.ecbdc47e.css",
+    "static/js/main.5ab30f7d.js"
   ]
 }
