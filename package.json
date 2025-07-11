@@ -1,8 +1,8 @@
 {
-  "name": "tsmc-referral-frontend",
+  "name": "lets-referral-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://allenyummy.github.io/tsmc-referral-frontend",
+  "homepage": "https://allenyummy.github.io/lets-referral-frontend",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@supabase/supabase-js": "^2.50.3",
