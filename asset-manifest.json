@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lets-referral-frontend/static/css/main.ecbdc47e.css",
-    "main.js": "/lets-referral-frontend/static/js/main.469d2b96.js",
+    "main.css": "/lets-referral-frontend/static/css/main.8a6a4c0f.css",
+    "main.js": "/lets-referral-frontend/static/js/main.edb7acd1.js",
     "static/js/453.75b16864.chunk.js": "/lets-referral-frontend/static/js/453.75b16864.chunk.js",
     "static/media/release.png": "/lets-referral-frontend/static/media/release.795041db1834d22a39a9.png",
     "index.html": "/lets-referral-frontend/index.html",
-    "main.ecbdc47e.css.map": "/lets-referral-frontend/static/css/main.ecbdc47e.css.map",
-    "main.469d2b96.js.map": "/lets-referral-frontend/static/js/main.469d2b96.js.map",
+    "main.8a6a4c0f.css.map": "/lets-referral-frontend/static/css/main.8a6a4c0f.css.map",
+    "main.edb7acd1.js.map": "/lets-referral-frontend/static/js/main.edb7acd1.js.map",
     "453.75b16864.chunk.js.map": "/lets-referral-frontend/static/js/453.75b16864.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecbdc47e.css",
-    "static/js/main.469d2b96.js"
+    "static/css/main.8a6a4c0f.css",
+    "static/js/main.edb7acd1.js"
   ]
 }
