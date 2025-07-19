@@ -1,4 +1,4 @@
-.tsmc-form-container {
+.form-container {
   border: 0.125rem solid black;
   border-radius: 0.625rem;
   background: white;
@@ -7,19 +7,19 @@
   color: black;
 }
 
-.tsmc-form-container h1 {
+.form-container h1 {
   font-size: 2.25rem;
   text-align: center;
 }
 
-.tsmc-form-container .box {
+.form-container .box {
   position: relative;
   margin: 1.875rem 0;
   width: 100%;
   height: 3.125rem;
 }
 
-.tsmc-form-container .box input {
+.form-container .box input {
   outline: none;
   border: 0.125rem solid black;
   border-radius: 2.5rem;
@@ -31,11 +31,11 @@
   font-weight: 400;
 }
 
-.tsmc-form-container .box input::placeholder {
+.form-container .box input::placeholder {
   color: black;
 }
 
-.tsmc-form-container .box .icon {
+.form-container .box .icon {
   position: absolute;
   top: 50%;
   right: 1.25rem;
@@ -44,8 +44,7 @@
   font-size: 1rem;
 }
 
-
-.tsmc-form-container button {
+.form-container button {
   cursor: pointer;
   outline: none;
   box-shadow: 0 0px 0.625rem rgba(0, 0, 0, 0.1);
@@ -59,8 +58,7 @@
   font-size: 1rem;
 }
 
-
-.tsmc-form-container .box .dropdown-toggle {
+.form-container .box .dropdown-toggle {
   width: 100%;
   height: 3.125rem;
   border-radius: 2.5rem;
@@ -73,13 +71,13 @@
   text-align: left;
 }
 
-.tsmc-form-container .box .dropdown-toggle::after {
+.form-container .box .dropdown-toggle::after {
   float: right;
   margin-top: 0.5rem;
   color: black;
 }
 
-.tsmc-form-container .box .dropdown-menu {
+.form-container .box .dropdown-menu {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   border: 0.125rem solid black;
@@ -87,11 +85,11 @@
   z-index: 1050;
 }
 
-.tsmc-form-container .box .dropdown-item {
+.form-container .box .dropdown-item {
   color: #fff;
 }
 
-.tsmc-form-container .box .dropdown-item:hover {
+.form-container .box .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 

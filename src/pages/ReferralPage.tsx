@@ -4,7 +4,7 @@ import ReferralForm from "../components/ReferralForm";
 
 const RerferralPage = () => {
   return (
-    <div className="tsmc-page-container">
+    <div className="page-container">
       <ReferralForm />
     </div>
   );

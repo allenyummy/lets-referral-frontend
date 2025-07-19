@@ -83,7 +83,7 @@ const ReferralForm = () => {
   };
 
   return (
-    <div className="tsmc-form-container">
+    <div className="form-container">
       {isSubmitting && <LoadingSpinner />}
       <form ref={formRef} action="" onSubmit={handleSubmit}>
         <h1> Let's Referral </h1>
