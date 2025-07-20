@@ -17,8 +17,8 @@ const ResumeUpload = ({ name, file, error, onFileChange, onError }: Props) => {
       onFileChange(null);
       return;
     }
-    if (file.size > 100 * 1024) {
-      onError("File size should be less than 100 KB");
+    if (file.size > 3 * 100 * 1024) {
+      onError("File size should be less than 300 KB");
       onFileChange(null);
       return;
     }
